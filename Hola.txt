@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<grupo denominacion="ewjfnwej">
+    <alumnos>
+        <apellidos>ewfjkwenfj</apellidos>
+        <fechaNacimiento>2021-11-03</fechaNacimiento>
+        <nombre>wqejkfnwej</nombre>
+        <repite>true</repite>
+        <sexo>HOMBRE</sexo>
+    </alumnos>
+    <alumnos>
+        <apellidos>fwekjfb</apellidos>
+        <fechaNacimiento>2021-11-11</fechaNacimiento>
+        <nombre>wefkljnwef</nombre>
+        <repite>true</repite>
+        <sexo>MUJER</sexo>
+    </alumnos>
+    <finCurso>2021-11-06</finCurso>
+    <iniCurso>2021-11-05</iniCurso>
+    <pesos actitud="80.0" examenes="75.0" practicas="45.0"/>
+</grupo>

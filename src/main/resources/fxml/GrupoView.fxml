@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="view" hgap="5.0" prefHeight="202.0" prefWidth="493.0" vgap="5.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+   </columnConstraints>
+   <children>
+      <Label text="Denominación:" />
+      <Label text="Inicio del curso: " GridPane.rowIndex="1" />
+      <Label text="Fin del curso: " GridPane.rowIndex="2" />
+      <Label text="Exámenes: " GridPane.rowIndex="3" />
+      <Label text="Prácticas: " GridPane.rowIndex="4" />
+      <Label text="Actitud: " GridPane.rowIndex="5" />
+      <TextField fx:id="denominacionField" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" />
+      <DatePicker fx:id="inicioCursoDatePicker" maxHeight="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <DatePicker fx:id="finCursoDatePicker" maxHeight="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.vgrow="NEVER">
+         <children>
+            <Slider fx:id="examenesSlider" majorTickUnit="10.0" maxHeight="1.7976931348623157E308" showTickMarks="true" snapToTicks="true" HBox.hgrow="ALWAYS" />
+            <Label fx:id="examenesLabel" text="0">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="\%" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.vgrow="NEVER">
+         <children>
+            <Slider fx:id="practicasSlider" majorTickUnit="10.0" maxHeight="1.7976931348623157E308" showTickMarks="true" snapToTicks="true" HBox.hgrow="ALWAYS" />
+            <Label fx:id="practicasLabel" text="0">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="\%" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.vgrow="NEVER">
+         <children>
+            <Slider fx:id="actitudSlider" majorTickUnit="10.0" maxHeight="1.7976931348623157E308" showTickMarks="true" snapToTicks="true" HBox.hgrow="ALWAYS" />
+            <Label fx:id="actitudLabel" text="0">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="\%" HBox.hgrow="NEVER" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
